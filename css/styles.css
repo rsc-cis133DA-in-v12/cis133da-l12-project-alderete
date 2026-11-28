@@ -1,28 +1,38 @@
-< !-- Author: Course: Lesson: -->body {
-    bg-color: #eee;
-    font-family: Ariel, sans-serif;
-    font-size: 9px;
-    color: #7af0ff;
+/* Author: joh2316432
+   Course: CIS133DA, Section 27487
+   Lesson: 12
+*/
+
+/* Fixed invalid comment syntax and bg-color property.
+   Corrected Arial spelling and improved readability. */
+body {
+    background-color: #eee;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #222;
 }
 
-header width: 80%;
-padding: 20px 0px;
-margin: 0 auto;
-text-align: center;
+/* Added missing opening brace after header. */
+header {
+    width: 80%;
+    padding: 20px 0;
+    margin: 0 auto;
+    text-align: center;
 }
 
 main {
     width: 80%;
-    padding: 30px 0px;
+    padding: 30px 0;
     margin: 0 auto;
 }
 
+/* Improved link color contrast and visibility. */
 nav a {
     margin: 10px;
-    padding: 2px;
+    padding: 8px;
     background-color: #FFFF00;
-    color: #9D85FF;
-    text-decoration: none;
+    color: #222;
+    text-decoration: underline;
 }
 
 h1,
@@ -35,23 +45,29 @@ img {
     display: block;
     margin: auto;
     width: 300px;
+    max-width: 100%;
 }
 
+/* Removed invalid ampersand before width. */
 table {
-    & width: 100%;
+    width: 100%;
+    border-collapse: collapse;
 }
 
+/* Fixed missing semicolon after background color
+   and separated the border-collapse property. */
 table,
 th,
 td {
-    border: 1px solid #FFF;
-    background-color: #FFFF00 border-collapse: collapse;
+    border: 1px solid #666;
+    background-color: #FFFF00;
     padding: 10px;
 }
 
+/* Improved header contrast and removed extra brace. */
 th {
     background-color: #185f80;
-}
+    color: #FFF;
 }
 
 footer {
@@ -59,5 +75,21 @@ footer {
     margin: auto;
     text-align: center;
     background-color: #185f80;
+    color: #FFF;
     padding: 20px;
+}
+
+footer a {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+textarea {
+    max-width: 100%;
+}
+
+a:focus,
+input:focus,
+textarea:focus {
+    outline: 3px solid #222;
 }
